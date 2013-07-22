@@ -1,0 +1,17 @@
+parameters:
+	twitter:
+		consumerKey:
+		consumerSecret:
+		accessToken:
+		accessTokenSecret:
+
+nette:
+	database:
+		dsn: 'mysql:host=localhost;dbname=nette_presentations_router'
+		user: root
+		password:
+
+services:
+
+factories:
+

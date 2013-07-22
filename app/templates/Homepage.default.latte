@@ -1,0 +1,24 @@
+{#content}
+	<h1>Custom router demo</h1>
+
+	<h2>Users</h2>
+	<ul>
+		{foreach $users as $user}
+		<li><a n:href="Users:, slug=> $user->slug">{$user->name}</a></li>
+		{/foreach}
+	</ul>
+
+	<h2>Events</h2>
+	<ul>
+		{foreach $events as $event}
+		<li><a n:href="Events:, slug => $event->slug">{$event->name}</a></li>
+		{/foreach}
+	</ul>
+
+	<h2>Groups</h2>
+	<ul>
+		{foreach $groups as $group}
+		<li><a n:href="Groups:, slug => $group->slug">{$group->name}</a></li>
+		{/foreach}
+	</ul>
+{/#}

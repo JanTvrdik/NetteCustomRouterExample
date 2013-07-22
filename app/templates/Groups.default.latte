@@ -1,0 +1,13 @@
+{#title}{$group->name} – User Profile{/#}
+
+{#content}
+	<h1>{$group->name}</h1>
+
+	<h2>Fans</h2>
+
+	<ul>
+	{foreach $members as $member}
+		<li><a n:href="Users:, userId => $member->id">{$member->name}</a></li>
+	{/foreach}
+	</ul>
+{/#}

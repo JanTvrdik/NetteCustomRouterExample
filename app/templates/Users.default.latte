@@ -1,0 +1,13 @@
+{#title}{$user->name} – User Profile{/#}
+
+{#content}
+	<h1>{$user->name}</h1>
+
+	{if isset($tweets) && $tweets}
+		<ul class="tweets">
+		{foreach $tweets as $tweet}
+			<li>{$tweet|tweetText|noescape}
+		{/foreach}
+		</ul>
+	{/if}
+{/#}
