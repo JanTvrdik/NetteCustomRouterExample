@@ -76,7 +76,7 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 INSERT INTO `users` (`id`, `name`, `slug`, `twitter`) VALUES
-(1,	'Filip Procházka',	'hosiplan',	'HosipLan'),
+(1,	'Filip Procházka',	'hosiplan',	'prochazkafilip'),
 (2,	'Jan Škrášek',	'hrach',	'hrachcz'),
 (3,	'Jan Doleček',	'juzna',	'juznacz'),
 (4,	'Jakub Vrána',	'vrana',	'jakubvrana'),
