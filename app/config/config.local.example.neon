@@ -1,4 +1,5 @@
 parameters:
+	# see https://apps.twitter.com/
 	twitter:
 		consumerKey:
 		consumerSecret:
@@ -10,8 +11,3 @@ nette:
 		dsn: 'mysql:host=localhost;dbname=nette_presentations_router'
 		user: root
 		password:
-
-services:
-
-factories:
-

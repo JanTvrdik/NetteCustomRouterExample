@@ -4,11 +4,6 @@
 # If you don't protect this directory from direct web access, anybody will be able to see your passwords.
 # http://nette.org/security-warning
 #
-parameters:
-
-php:
-	date.timezone: Europe/Prague
-
 nette:
 	application:
 		mapping:
@@ -24,8 +19,3 @@ services:
 	- App\RouterFactory
 
 	router: @App\RouterFactory::createRouter
-
-
-
-
-factories:

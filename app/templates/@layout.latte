@@ -1,16 +1,7 @@
 <!DOCTYPE html>
 <head>
 	<title>{block title}Nette Custom Router Demo{/block}</title>
-	<link rel="stylesheet" media="screen,projection,tv" href="{$basePath}/css/screen.css">
-	{block head}{/block}
+	<link rel="stylesheet" href="{$basePath}/css/screen.css">
 </head>
 
-<div n:foreach="$flashes as $flash" class="flash {$flash->type}">{$flash->message}</div>
-
 {include #content}
-
-{block scripts}
-	<script src="{$basePath}/js/jquery.js"></script>
-	<script src="{$basePath}/js/netteForms.js"></script>
-	<script src="{$basePath}/js/main.js"></script>
-{/block}

@@ -6,7 +6,7 @@
 	{if isset($tweets) && $tweets}
 		<ul class="tweets">
 		{foreach $tweets as $tweet}
-			<li>{$tweet|tweetText|noescape}
+			<li>{$tweet|tweetText|noescape}</li>
 		{/foreach}
 		</ul>
 	{/if}
