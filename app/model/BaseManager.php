@@ -6,11 +6,11 @@ use Nette;
 
 abstract class BaseManager extends Nette\Object
 {
-	/** @var  Nette\Database\SelectionFactory */
-	protected $selectionFactory;
+	/** @var  Nette\Database\Context */
+	protected $db;
 
-	public function __construct(Nette\Database\SelectionFactory $selectionFactory)
+	public function __construct(Nette\Database\Context $db)
 	{
-		$this->selectionFactory = $selectionFactory;
+		$this->db = $db;
 	}
 }

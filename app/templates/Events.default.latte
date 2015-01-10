@@ -1,8 +1,8 @@
-{#content}
+{block content}
 	<h1>{$event->name}</h1>
 
 	<p>
 		<strong>From</strong>: {$event->startDate|date:'j. n. Y H:i'}<br>
 		<strong>To</strong>: {$event->startDate|date:'j. n. Y H:i'}
 	</p>
-{/#}
+{/block}

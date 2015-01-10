@@ -8,6 +8,6 @@ class SlugManager extends BaseManager
 {
 	public function getBySlug($slug)
 	{
-		return $this->selectionFactory->table('slugs')->wherePrimary($slug)->fetch();
+		return $this->db->table('slugs')->wherePrimary($slug)->fetch();
 	}
 }

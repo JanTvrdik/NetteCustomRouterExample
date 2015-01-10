@@ -1,6 +1,6 @@
-{#title}{$user->name} – User Profile{/#}
+{block title}{$user->name} – User Profile{/block}
 
-{#content}
+{block content}
 	<h1>{$user->name}</h1>
 
 	{if isset($tweets) && $tweets}
@@ -10,4 +10,4 @@
 		{/foreach}
 		</ul>
 	{/if}
-{/#}
+{/block}

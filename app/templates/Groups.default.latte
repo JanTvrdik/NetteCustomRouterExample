@@ -1,6 +1,6 @@
-{#title}{$group->name} – User Profile{/#}
+{block title}{$group->name} – User Profile{/block}
 
-{#content}
+{block content}
 	<h1>{$group->name}</h1>
 
 	<h2>Fans</h2>
@@ -10,4 +10,4 @@
 		<li><a n:href="Users:, userId => $member->id">{$member->name}</a></li>
 	{/foreach}
 	</ul>
-{/#}
+{/block}

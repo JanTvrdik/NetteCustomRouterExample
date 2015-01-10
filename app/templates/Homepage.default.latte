@@ -1,4 +1,4 @@
-{#content}
+{block content}
 	<h1>Custom router demo</h1>
 
 	<h2>Users</h2>
@@ -21,4 +21,4 @@
 		<li><a n:href="Groups:, slug => $group->slug">{$group->name}</a></li>
 		{/foreach}
 	</ul>
-{/#}
+{/block}

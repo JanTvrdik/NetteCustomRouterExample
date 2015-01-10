@@ -10,20 +10,20 @@ class UserManager extends BaseManager
 	/** @var  Twitter */
 	private $twitter;
 
-	public function __construct(Nette\Database\SelectionFactory $selectionFactory, Twitter $twitter)
+	public function __construct(Nette\Database\Context $db, Twitter $twitter)
 	{
-		parent::__construct($selectionFactory);
+		parent::__construct($db);
 		$this->twitter = $twitter;
 	}
 
 	public function getBySlug($slug)
 	{
-		return $this->selectionFactory->table('users')->where(':slugs.slug', $slug)->fetch();
+		return $this->db->table('users')->where(':slugs.slug', $slug)->fetch();
 	}
 
 	public function getAll()
 	{
-		return $this->selectionFactory->table('users')->fetchAll();
+		return $this->db->table('users')->fetchAll();
 	}
 
 	public function getTweets($twitterNick, $count)

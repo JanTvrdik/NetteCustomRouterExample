@@ -5,11 +5,11 @@ class EventManager extends BaseManager
 {
 	public function getBySlug($slug)
 	{
-		return $this->selectionFactory->table('events')->where(':slugs.slug', $slug)->fetch();
+		return $this->db->table('events')->where(':slugs.slug', $slug)->fetch();
 	}
 
 	public function getAll()
 	{
-		return $this->selectionFactory->table('events')->fetchAll();
+		return $this->db->table('events')->fetchAll();
 	}
 }
