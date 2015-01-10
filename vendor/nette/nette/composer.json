@@ -1,0 +1,51 @@
+{
+	"name": "nette/nette",
+	"type": "library",
+	"description": "Nette Framework - innovative framework for fast and easy development of secured web applications in PHP. Write less, have cleaner code and your work will bring you joy.",
+	"keywords": ["framework", "mvc", "debugging", "templating", "database", "forms", "mailing"],
+	"homepage": "http://nette.org",
+	"license": ["BSD-3-Clause", "GPL-2.0", "GPL-3.0"],
+	"authors": [
+		{
+			"name": "David Grudl",
+			"homepage": "http://davidgrudl.com"
+		},
+		{
+			"name": "Nette Community",
+			"homepage": "http://nette.org/contributors"
+		}
+	],
+	"require": {
+		"nette/application": "2.2.4",
+		"nette/bootstrap": "2.2.4",
+		"nette/caching": "2.2.3",
+		"nette/component-model": "2.2.0",
+		"nette/database": "2.2.3",
+		"nette/di": "2.2.3",
+		"nette/finder": "2.2.1",
+		"nette/forms": "2.2.4",
+		"nette/http": "2.2.5",
+		"nette/mail": "2.2.3",
+		"nette/neon": "2.2.4",
+		"nette/php-generator": "2.2.1",
+		"nette/reflection": "2.2.1",
+		"nette/robot-loader": "2.2.1",
+		"nette/safe-stream": "2.2.0",
+		"nette/security": "2.2.2",
+		"nette/tokenizer": "2.2.0",
+		"nette/utils": "2.2.4",
+		"latte/latte": "2.2.4",
+		"tracy/tracy": "2.2.6"
+	},
+	"require-dev": {
+		"nette/tester": "~1.3"
+	},
+	"replace": {
+		"nette/deprecated": "2.2"
+	},
+	"autoload": {
+		"classmap": ["Nette/"],
+		"files": ["Nette/loader.php"]
+	},
+	"minimum-stability": "RC"
+}
